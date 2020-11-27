@@ -1,0 +1,33 @@
+{% extends 'student/header.html' %}
+
+
+{% block content %}
+
+      <table>
+        <thead>
+          <tr>
+              <th>Ismi</th>
+              <th>Familyasi</th>
+              <th>Yoshi</th>
+              <th>O'quv turi</th>
+              <th>Kurs</th>
+              <th>Vaqt</th>
+          </tr>
+        </thead>
+
+        <tbody>
+         {% for s in student_info %}
+          <tr>
+            <td>{{ s.f_name }}</td>
+            <td>{{ s.l_name }}</td>
+            <td>{{ s.age }}</td>
+            <td>{{ s.level }}</td>
+			      <td>{{ s.year_in_school }}</td>
+            <td>{{ s.published_time | date:"d.m.Y" }}</td>
+          </tr>
+         {% endfor %}
+        </tbody>
+      </table>	
+
+{% endblock %}
+

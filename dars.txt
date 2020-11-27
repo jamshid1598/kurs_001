@@ -1,0 +1,45 @@
+crud = create, read, update, dalete
+
+
+
+list_display = [
+	...
+	fields
+	...
+]
+
+
+list_display_links=[
+	...
+	fields
+	...
+]
+
+search_fields=[
+	...
+	fields
+	...
+]
+
+ordering=[
+	...
+	fields
+	...
+]
+
+
+
+// =====================================
+
+Relationships
+
+    Many-to-one relationships
+
+    Many-to-many relationships
+
+    Extra fields on many-to-many relationships
+
+    One-to-one relationships
+
+
+
